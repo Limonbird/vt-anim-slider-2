@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slider</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="slider">
+      <div class="slider-bg">
+        <div class="slider-bg-item slider-bg-item--active">
+          <img
+            class="bg-img"
+            src="./img/openkam.jpg"
+            alt="Открой свою Камчатку"
+          />
+        </div>
+        <div class="slider-bg-item">
+          <img
+            class="bg-img"
+            src="./img/advent.jpg"
+            alt="Приключения без границ"
+          />
+        </div>
+        <div class="slider-bg-item">
+          <img
+            class="bg-img"
+            src="./img/safetrav.jpg"
+            alt="Путешествуй безопасно"
+          />
+        </div>
+      </div>
+      <div class="slider-item slider-item--active">
+        <div class="slider-item__header">
+          <span class="header-item header-item__pre-prev"
+            >Приключения<br />без границ</span
+          >
+          <span class="header-item header-item__prev"
+            ><span class="header-item__link"
+              >Путешествуй<br />безопасно</span
+            ></span
+          >
+          <span class="header-item header-item__current"
+            >Открой свою<br />Камчатку</span
+          >
+          <span class="header-item header-item__next" onclick="next()"
+            ><span class="header-item__link"
+              >Приключения<br />без границ</span
+            ></span
+          >
+          <span class="header-item header-item__post-next"
+            >Путешествуй<br />безопасно</span
+          >
+        </div>
+        <div class="slider-item__content">
+          <div class="slider-item__title">Экскурсии по Камчатке</div>
+          <div class="slider-item__desc">
+            <p>
+              Популярные достопримечательности и неизведанные места полуострова:
+              Долина гейзеров и Курильское озеро, природные парки, горы, вулканы
+              и уединенные горячие источники.
+            </p>
+          </div>
+          <div class="slider-item__links">
+            <a href="#!" class="slider-item__link"
+              >Вертолетные<br />экскурсии</a
+            >
+            <a href="#!" class="slider-item__link"
+              >Автомобильные<br />экскурсии</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="slider-item">
+        <div class="slider-item__header">
+          <span class="header-item header-item__pre-prev"
+            >Путешествуй<br />безопасно</span
+          >
+          <span class="header-item header-item__prev"
+            ><span class="header-item__link"
+              >Открой свою<br />Камчатку</span
+            ></span
+          >
+          <span class="header-item header-item__current"
+            >Приключения<br />без границ</span
+          >
+          <span class="header-item header-item__next" onclick="next()"
+            ><span class="header-item__link"
+              >Путешествуй<br />безопасно</span
+            ></span
+          >
+          <span class="header-item header-item__post-next"
+            >Открой свою<br />Камчатку</span
+          >
+        </div>
+        <div class="slider-item__content">
+          <div class="slider-item__title">Индивидуальные программы отдыха</div>
+          <div class="slider-item__desc">
+            <p>
+              Вертолетные и автомобильные туры, охота, рыбалка — составим любую
+              программу с сервисом бизнесс-класса под ваши пожелания.
+            </p>
+          </div>
+          <div class="slider-item__links">
+            <a href="#!" class="slider-item__link">Вертолетные<br />VIP-туры</a>
+            <a href="#!" class="slider-item__link">Охота</a>
+            <a href="#!" class="slider-item__link">Рыбалка</a>
+          </div>
+        </div>
+      </div>
+      <div class="slider-item">
+        <div class="slider-item__header">
+          <span class="header-item header-item__pre-prev"
+            >Открой свою<br />Камчатку</span
+          >
+          <span class="header-item header-item__prev"
+            ><span class="header-item__link"
+              >Приключения<br />без границ</span
+            ></span
+          >
+          <span class="header-item header-item__current"
+            >Путешествуй<br />безопасно</span
+          >
+          <span class="header-item header-item__next" onclick="next()"
+            ><span class="header-item__link"
+              >Открой свою<br />Камчатку</span
+            ></span
+          >
+          <span class="header-item header-item__post-next"
+            >Приключения<br />без границ</span
+          >
+        </div>
+        <div class="slider-item__content">
+          <div class="slider-item__title">Безопасность и комфорт</div>
+          <div class="slider-item__desc">
+            <p>
+              МЫ УДЕЛЯЕМ особое ВНИМАНИЕ БЕЗОПАСНОСТИ ТУРИСТОВ: ЛЕТАЕМ С
+              АВИАКОМПАНИЕЙ-ПАРТНЕРОМ «ВИТЯЗЬ-АЭРО», ВЕРТОЛЕТЫ которой ПРОХОДЯТ
+              ЕЖЕДНЕВНЫЙ ТЕХОСМОТР. АВТОМОБИЛЬНЫЕ ТУРЫ ПРОХОДЯТ НА ПАССАЖИРСКИХ
+              «ВАХТОВКАХ» УРАЛ И КАМАЗ 2018–2019 ГОДОВ ВЫПУСКА.
+            </p>
+            <p>
+              В СТОИМОСТЬ ВСЕХ ЭКСКУРСИЙ ВКЛЮЧЕНЫ: ГОРЯЧИЕ ПИТАНИЕ, СТРАХОВКА и
+              трансфер из основных гостиниц и баз отдыха до места начала
+              экскурсии.
+            </p>
+          </div>
+          <div class="slider-item__links">
+            <a href="#!" class="slider-item__link">О компании</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <p>Some text after slider</p>
+      <p>Some text after slider</p>
+      <p>Some text after slider</p>
+      <p>Some text after slider</p>
+      <p>Some text after slider</p>
+    </div>
+  </body>
+</html>
+
+<script>
+  let bgDur = 300;
+  let dur = 1000;
+
+  const next = () => {
+    let activeSlide = document.querySelector(".slider-item--active");
+    let activeBg = document.querySelector(".slider-bg-item--active");
+    let nextButton = activeSlide.querySelector(".header-item__next");
+    let slideHeader = activeSlide.querySelector(".slider-item__header");
+
+    //все, что ни вперед ни назад, вынесла отедльно, чтобы не повторять код 2 раза для вперед и назад
+    blockClicks();
+    fades(activeSlide);
+
+    //смена картинки-фона:
+    setTimeout(
+      () => (
+        (activeBg.style.opacity = ""),
+        activeBg.classList.toggle("slider-bg-item--active"),
+        activeBg.nextElementSibling.classList.toggle("slider-bg-item--active")
+      ),
+      bgDur
+    );
+    if (activeBg.nextElementSibling === null) {
+      setTimeout(
+        () =>
+          document
+            .querySelector(".slider-bg-item")
+            .classList.toggle("slider-bg-item--active"),
+        bgDur
+      );
+    }
+
+    // сдвинуть header влево
+    slideHeader.style.transform = "translateX(-50%)";
+    setTimeout(() => (slideHeader.style.transform = "translateX(0)"), dur);
+
+    // фейд аут некста
+    nextButton.style.opacity = "0";
+    setTimeout(() => (nextButton.style.opacity = ""), dur);
+
+    //перекинуть класс active на след слайд после окончания анимации
+    setTimeout(() => activeSlide.classList.toggle("slider-item--active"), dur);
+    setTimeout(
+      () =>
+        activeSlide.nextElementSibling.classList.toggle("slider-item--active"),
+      dur
+    );
+
+    //если нет последующего слайда, задать active первому
+    if (activeSlide.nextElementSibling === null) {
+      setTimeout(
+        () =>
+          document
+            .querySelector(".slider-item")
+            .classList.toggle("slider-item--active"),
+        dur
+      );
+    }
+  };
+
+  const blockClicks = () => {
+    //запретить клики по элементам слайдера на время анимации (чтобы нельзя было 2 раза подряд кликнуть вперед / назад)
+    document.querySelector(".slider").style.pointerEvents = "none";
+    setTimeout(
+      () => (document.querySelector(".slider").style.pointerEvents = "auto"),
+      dur
+    );
+  };
+
+  const fades = (activeSlide) => {
+    let slideCurrentHeader = activeSlide.querySelector(".header-item__current");
+    let slideContent = activeSlide.querySelector(".slider-item__content");
+    let allSlideTitles = document.querySelectorAll(".slider-item__title");
+    let allSlideDescs = document.querySelectorAll(".slider-item__desc");
+    let allSlideLinks = document.querySelectorAll(".slider-item__links");
+    let allSlideImgs = document.querySelectorAll(".bg-img");
+
+    //фейд картинки-фона:
+    for (let bg of allSlideImgs) {
+      setTimeout(() => (bg.style.animationName = "img-out"), bgDur);
+    }
+
+    // фейд ин центрального хэдера
+    slideCurrentHeader.style.opacity = "0.3";
+    setTimeout(() => (slideCurrentHeader.style.opacity = ""), dur);
+
+    // фейд аут контента
+    slideContent.style.opacity = "0";
+    setTimeout(() => (slideContent.style.opacity = ""), dur);
+
+    // фейд ин тайтла (доб при нажатии, если сразу — видно при обновлении страницы)
+    for (let title of allSlideTitles) {
+      setTimeout(() => (title.style.animationName = "fade-out"), dur);
+    }
+
+    // выезжающий текст
+    for (let decs of allSlideDescs) {
+      setTimeout(() => (decs.style.animationName = "cont-to-start"), dur);
+    }
+
+    // выезжающие ссылки
+    for (let links of allSlideLinks) {
+      setTimeout(() => (links.style.animationName = "cont-to-start"), dur);
+    }
+  };
+</script>
